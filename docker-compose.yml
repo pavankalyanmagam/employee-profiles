@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+
+  ## Employee-Service Docker Compose Config
+  employee-api:
+    container_name: employee-api
+    image: pavankalyanmagam/employee-api:latest
+    ports:
+      - "8080:8080"
+
+  ## Employee-UI Docker Compose Config
+  employee-ui:
+    container_name: employee-ui
+    image: pavankalyanmagam/employee-ui:1.0.0
+    ports:
+      - "3000:3000"
+    
